@@ -1,0 +1,35 @@
+query Test {
+  test
+}
+
+query Users {
+  users {
+    id
+    email
+  }
+}
+
+mutation Register($email: String!, $pw: String!) {
+  register(email: $email, pw: $pw)
+}
+
+mutation Login($email: String!, $pw: String!) {
+  login(email: $email, pw: $pw) {
+    accessToken
+    user {
+      id
+      email
+    }
+  }
+}
+
+query PrivateProfile {
+  privateProfile {
+    id
+    email
+  }
+}
+
+mutation Logout {
+  logout
+}
