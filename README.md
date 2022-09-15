@@ -1,4 +1,4 @@
-# User auth JWT with Express, GraphQL, React, TypeScript
+# User auth JWT with Express, GraphQL, React, TypeScript (dummy postgres database)
 
 ## Tasks
 
